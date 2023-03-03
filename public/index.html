@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+        <title>Chat App</title>
+        <link rel="icon" href="img/favicon.png">
+        <link rel = "stylesheet" href="css/styles.min.css">
     </head>
     <body>
-       <h2>CHAT APP</h2>
-       <form id = "message-form">
-            <input name="message" placeholder="Message">
-            <button> Send </button>
-       </form>
-       <button id = "send-location"> Send Location</button>
-       <!-- <button id = "increment">+1</button> -->
-       <script src = "/socket.io/socket.io.js"></script>
-       <script src = "/js/chat.js"> </script>
+        <div class="centered-form">
+            <div class="centered-form__box">
+                <h1>Join</h1>
+                <form action ="chat.html">
+                    <label>Diaplay Name</label>
+                    <input type="text" name="username" placeholder="Diaplay Name" required>
+                    <label>Room</label>
+                    <input type="text" name="room" placeholder="Room" required>
+                    <button>Join</button>
+                </form>
+            </div>
+        </div>
     </body>
 </html>
